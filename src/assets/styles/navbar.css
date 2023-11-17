@@ -1,56 +1,192 @@
-:root{
-    --color-sub_menu1:#131353;
+:root {
+    --color-sub_menu1: #131353;
     --color-letter-text: #ebf2ff;
     --color-brand: #6e85ff;
-    --color-bottom:#97b1ff;
+    --color-bottom: #97b1ff;
+    --color-hover: #2020fe;
+    --colo-superposition: black;
+    --max--width-screen: 2400px;
 }
 
-/* ------------------- NAVBAR 1--------------------*/
-.sub__menu__1{
+.principal__header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* NAVBAR 1 */
+.sub__menu__1 {
     color: var(--color-letter-text);
-    background-color: var(--color-sub_menu1);
+    background-color: var(--colo-superposition);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 40px;
+    gap: 7rem;
 }
 
-.sub__menu__2{
+.sub__menu__2 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
 }
 
-.email__icon{
+.email__icon {
     width: 20px;
 }
 
-/* ------------------- NAVBAR LOGO--------------------*/
-
-.menu__Logo{
-display: flex;
-height: 60px;
-align-items: center;
-justify-content: space-around;
-}
-
-.button__menu{
-    width: 100px;
-    height: 50px;
-}
-
-
-/* ------------------- NAVBAR PRINCIPAL--------------------*/
-
-.principal__menu{
+.email__contact {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+
+.line {
+    display: none;
+}
+
+/* NAVBAR LOGO */
+.menu__Logo {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button__menu {
+    width: 100px;
+    height: 50px;
+    background-color: var(--color-bottom);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button__menu:hover {
+    background-color: var(--color-hover);
+    color: var(--color-letter-text);
+}
+
+/* NAVBAR PRINCIPAL */
+.principal__menu {
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
     width: 100%;
-    background-color: var(--color-brand);
+    background-color: var(--color-sub_menu1);
     height: 50px;
     color: var(--color-letter-text);
 }
+
+.list__principal__menu {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
+ 
+
+
+
+.list__principal__menu:hover {
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: var(--color-hover);
+    display: block;
+}
+
+.list__principal__menu2>a{
+display: none;
+}
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 700px) {
+    .sub__menu__2_mobile{
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: var(--color-sub_menu1);
+        color: var(--color-letter-text);
+    }
+
+    .list__principal__menu0>a{
+        display: block;
+    }
+
+    .list__principal__menu2>a{
+        display: block;
+    }
+
+
+    .sub__menu__2 {
+        display: none;
+    }
+
+    .bar__menu {
+        width: 15px;
+        display: block;
+    }
+
+    .line {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        cursor: pointer;
+    }
+
+    .line_menu {
+        background-color: var(--color-letter-text);
+        width: 21px;
+        height: 2px;
+    }
+
+    /* Estilos para el menú principal en dispositivos móviles */
+    .principal__menu {
+        display: none;
+    }
+
+    .principal__menu__mobile {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: var(--color-sub_menu1);
+        color: var(--color-letter-text);
+    }
+
+    .list__principal__menu2,
+    .list__principal__menu1 {
+        height: 25px;
+        padding-left: 2em;
+        padding-right: 2em;
+        border-bottom: 1px solid rgba(243, 243, 243, 0.055);
+    }
+    
+    .list__principal__menu2:hover,
+    .list__principal__menu1:hover {
+        padding-left: 2em;
+        padding-right: 2em;
+        background-color: var(--color-hover);
+        height: 25px;
+    }
+    .menu__Logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+

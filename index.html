@@ -5,33 +5,61 @@
     <link rel="stylesheet" href="/src/assets/styles/styles.css">
     <link rel="stylesheet" href="/src/assets/styles/resets.css">
     <link rel="stylesheet" href="/src/assets/styles/navbar.css">
+    <script src="/src/assets/js/animations.js" defer></script>
+    <script src="/src/assets/js/main.js" defer></script>
 
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="principal__header">
         <div class="sub__menu__1">
-            <div>
-                <img class="email__icon" src="/src/img/icons/ic-mail.png" alt="">
+            <div class="email__contact">
+                <a class="email__contact" href=""><img class="email__icon" src="/src/img/icons/ic-mail.png" alt="">admin@wiredominio.com</a>
             </div>
-            <ul class="sub__menu__2">
-                <li>Blog</li>
-                <li>Company</li>
-                <li>Contact</li>
-                <li>Login</li>
-            </ul>
+            <div class="menu__responsive">
+                <ul class="sub__menu__2">
+                    <li class="list__principal__menu0"><a href="">Blog</a></li>
+                    <li class="list__principal__menu0"><a href="">Company</a></li>
+                    <li class="list__principal__menu0"><a href="">Contact</a></li>
+                    <li class="list__principal__menu0"><a href="">Login</a></li>
+                </ul>
+                <div onclick="toggleVisibility()" class="line">
+                    <div class="line_menu"></div>
+                    <div class="line_menu"></div>
+                    <div class="line_menu"></div>
+                </div>
+
         </div>
+        </div>
+        <ul class="sub__menu__2_mobile">
+            <li class="list__principal__menu1"><a href="">Blog</a></li>
+            <li class="list__principal__menu1"><a href="">Company</a></li>
+            <li class="list__principal__menu1"><a href="">Contact</a></li>
+            <li class="list__principal__menu1"><a href="">Login</a></li>
+        </ul>
         <div class="menu__Logo">
-            <P>LOGO</P>
+            <P class="logo">WIREDOMINIO</P>
             <button class="button__menu">Get Info</button>
+            <div onclick="toggleMenu()" class="line">
+                <div class="line_menu"></div>
+                <div class="line_menu"></div>
+                <div class="line_menu"></div>
+            </div>
         </div>
-        <nav>
+        <nav class="nav_menu">
             <ul class="principal__menu">
-                <li>Dominios</li>
-                <li>Hosting</li>
-                <li>Certificados ssl</li>
-                <li>Revendedores</li>
-                <li>Ayuda</li>
+                <li class="list__principal__menu"><a href="">Dominio</a></li>
+                <li class="list__principal__menu"><a href="">Hosting</a></li>
+                <li class="list__principal__menu"><a href="">Certificados SSL</a></li>
+                <li class="list__principal__menu"><a href="">Revendedores</a></li>
+                <li class="list__principal__menu"><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="principal__menu__mobile">
+                <li class="list__principal__menu2"><a href="">Dominio</a></li>
+                <li class="list__principal__menu2"><a href="">Hosting</a></li>
+                <li class="list__principal__menu2"><a href="">Certificados SSL</a></li>
+                <li class="list__principal__menu2"><a href="">Revendedores</a></li>
+                <li class="list__principal__menu2"><a href="">Ayuda</a></li>
             </ul>
         </nav>
     </header>
