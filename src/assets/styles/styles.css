@@ -1,0 +1,319 @@
+/* -----------------COLORES ----------------- */
+
+:root {
+    --color-sub_menu1: #131353;
+    --color-letter-text: #ebf2ff;
+    --color-brand: #6e85ff;
+    --color-bottom: #97b1ff;
+    --color-hover: #2020fe;
+    --colo-superposition: black;
+    --max--width-screen: 2400px;
+}
+
+/*--------------- BANNER PRINCIPAL ---------------*/
+
+.principal__banner{
+    color: var(--color-letter-text);
+}
+
+.article__with__img {
+    position: absolute;
+    width: 100%;
+    max-height: 500px; /* Ajusta la altura máxima según sea necesario */
+    overflow: hidden;
+  }
+  
+  .article__with__img img.banner__web {
+    width: 100%;
+    height: 400px;
+    display: block;
+    z-index: 1; /* Asegura que la imagen esté por encima del fondo oscuro */
+  }
+  
+  .article__with__img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro con opacidad del 80% */
+    z-index: 0; /* Asegura que el fondo oscuro esté detrás de la imagen */
+  }
+  
+
+.info__banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.info__text__list{
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.check__blue{
+    width: 25px;
+}
+
+.icon__infor__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.principal__price__banner{
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--color-letter-text);
+}
+
+.principal__price__banner>span{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-letter-text);
+}
+
+.btn__price{
+    color: var(--color-letter-text);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.principal__btn__banner{
+    width: 200px;
+    height: 40px;
+    color: var(--color-sub_menu1);
+    background-color: var(--color-bottom);
+    border-radius: 5px;
+}
+
+.principal__btn__banner:hover{
+    background-color: var(--color-hover);
+    color: var(--color-letter-text);
+}
+
+.banner__img__small{
+    display: none;
+}
+
+/* ------------------PLANS SECTIONS------------------- */
+
+.plans_section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card__plan{
+    border: 2px solid var(--color-bottom);
+    width: 380px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.card__plan_midle{
+    border: 2px solid var(--color-hover);
+    width: 380px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 50px;
+}
+
+
+.title__plan__info{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+.bg__color__plan{
+    width: 376px;
+    background-color: var(--color-bottom);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.btn__plan__configure{
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid var(--color-hover);
+    border-radius: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check__plans{
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 20px;
+}
+
+.price__plan1{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.month__currenty{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btn__plan__configure:hover{
+    background-color: var(--color-hover);
+    border: 10px solid var(--color-hover);
+    color: var(--color-letter-text);
+    font-size: 20px;
+}
+
+.check__plans:hover{
+    background-color: var(--color-bottom);
+}
+
+
+/* ------------------------WHAT WE DO SECTION -------------------*/
+
+.What__We__Do{
+    margin-top: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 500px;
+}
+
+.image__relative {
+    position: absolute;
+    width: 100%;
+    max-height: 800px; /* Ajusta la altura máxima según sea necesario */
+    overflow: hidden;
+  }
+
+
+.image__relative img.banner__web1 {
+    width: 100%;
+    height: 800px;
+    display: block;
+    z-index: 1; /* Asegura que la imagen esté por encima del fondo oscuro */
+  }
+
+.image__relative::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro con opacidad del 80% */
+    z-index: 0; /* Asegura que el fondo oscuro esté detrás de la imagen */
+  }
+
+.first__component{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+    max-width: 1500px;
+    color: var(--color-letter-text);
+}
+
+.icon__service__why{
+    width: 90px;
+}
+
+
+
+.icon__info__section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    max-width: 400px;
+    text-align: center;
+    font-size: 14px;
+    gap: 1rem;
+}
+
+.title__inf__description{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ------------------MEDIA QUERY PANTALLAS GRANDES--------------------------- */
+
+@media (width >= 700px) {
+
+    .info__banner{
+        width: 600px;
+    }
+
+    .banner__img__small{
+        display: block;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon__shield {
+        width: 50px;
+        height: 50px; 
+        object-fit: contain;
+      }
+    .server__slide{
+        width: 350px;
+    }
+
+    .principal__banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 6rem;
+    }
+
+    .icon__info__details{
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .border__icon{
+        border: 1px solid var(--color-bottom);
+        padding: 1rem;
+        border-radius: 50%;
+    }
+
+}
+

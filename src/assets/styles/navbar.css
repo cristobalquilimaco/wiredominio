@@ -97,9 +97,6 @@
 }
 
 
- 
-
-
 
 .list__principal__menu:hover {
     padding-left: 2em;
@@ -112,6 +109,10 @@
 
 .list__principal__menu2>a{
 display: none;
+}
+
+.sub__menu__2_mobile{
+    display: none;
 }
 
 
@@ -195,6 +196,7 @@ display: none;
         width: 90px;
         height: 40px;
     }
-    
+
+
 }
 

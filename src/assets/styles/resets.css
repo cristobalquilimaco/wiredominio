@@ -25,6 +25,7 @@
     border: none;
     font-family: inherit;
     background-color: salmon;
+    cursor: pointer;
   }
   select {
     font-family: inherit;
