@@ -328,6 +328,8 @@
 .principal__footer{
     background-color: var(--color-sub_menu1);
     color: var(--color-letter-text);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .quick__menu{
@@ -338,6 +340,35 @@
 .menu__footer__section{
     display: flex;
     justify-content: space-around;
+}
+
+.Footer__menu__social{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.circle__social__media{
+    border: 1px solid var(--color-letter-text);
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    aspect-ratio: 1;
+    width: 45px;
+    height: 45px;
+}
+
+.logo_social{
+    width: 25px;
+    object-fit: cover;
+}
+
+.info__social__l{
+    display: flex;
+    align-items: center;
 }
 
 
