@@ -58,9 +58,8 @@
     justify-content: space-around;
 }
 
-.logo {
-    font-size: 23px;
-    font-weight: bold;
+.Logo__img {
+    width: 200px;
 }
 
 .button__menu {
