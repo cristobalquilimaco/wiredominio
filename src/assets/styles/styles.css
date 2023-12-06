@@ -274,7 +274,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--color-hover);
+    color: var(--color-sub_menu1);
 }
 
 .contact__form{
@@ -305,12 +305,22 @@
 .input__zone{
     min-width: 250px;
     height: 30px;
-    background-color: var(--color-bottom);
+    background-color: rgb(245, 243, 243);
     border: 0;
 }
 
+.btn__subtmit__form{
+    background-color: var(--color-bottom);
+    font-size: 23px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
-
+.btn__subtmit__form:hover{
+    background-color: var(--color-hover);
+    color: var(--color-letter-text);
+}
 
 
 
