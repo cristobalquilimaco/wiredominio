@@ -1,9 +1,9 @@
 :root {
     --color-sub_menu1: #6B3DBB;
     --color-letter-text: #ebf2ff;
-    --color-brand: #6e85ff;
-    --color-bottom: #97b1ff;
-    --color-hover: #7F5281;
+    --color-brand: white;
+    --color-bottom: #6B3DBB;
+    --color-hover: #333333;
     --colo-superposition: black;
     --max--width-screen: 2400px;
 }
