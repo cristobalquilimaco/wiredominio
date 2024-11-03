@@ -198,8 +198,6 @@
     font-size: 30px;
 }
 
-
-
 .bg__color__plan{
     width: auto;
     background-color: var(--color-sub_menu1);
@@ -222,6 +220,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--color-brand);
 }
 
 .check__plans{
