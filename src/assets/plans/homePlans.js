@@ -44,17 +44,27 @@ const plans = [
       planDiv.classList.add('plan');
   
       planDiv.innerHTML = `
+      <section class="prueba">
       <div class="package">
       <div class="package2">
        <h2>${plan.name}</h2>
         <p>Price: ${plan.price}</p>
         <p>${plan.savePercentage} (was: ${plan.savePrice})</p>
-        <ul>
-          ${plan.features.map(feature => `<li>${feature}</li>`).join('')}
-        </ul>
-        <a href="${plan.url}" target="_blank">Buy Now</a>
+      <ul>
+        ${plan.features.map(feature => `
+          <li>
+            <div class="check__plans">
+              <img class="check__blue" src="/src/img/icons/check.png" alt="">
+              <p>${feature}</p>
+            </div>
+          </li>`).join('')}
+      </ul>
+      <div class="btn__chose-container">
+        <a href="${plan.url}" target="_blank"><button class="btn__plan__configure">Chose plan</button></a>
       </div>
       </div>
+      </div>
+</section>
       `;
   
       container.appendChild(planDiv);
