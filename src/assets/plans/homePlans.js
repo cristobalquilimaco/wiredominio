@@ -28,12 +28,12 @@ const plans = [
     },
     {
       id: 4,
-      name: 'US/East Coast - Supermicro MicroCloud',
+      name: 'Dedicated Servers in Miami, FL - Large',
       url: 'https://my.donhoster.com/cart.php?a=add&pid=11',
       price: '$120.00 USD',
       savePrice: '$9.99',
       savePercentage: 'Save 90%',
-      features: ['Bare Metal Dedicated Server in USA', 'Intel Xeon E3 processor families E3-1230 v3, E3-1240 v3, E3-1270 v3', 'Up to 32GB DDR3 1600MHz memory support', '2 x 3.5" SATA/SSD drive options', 'Fully Hotswappable node chassis', 'Redundant Power Supplies'],
+      features: ['Intel Dual Xeon 3.0 Ghz', '16 GB RAM memory', '1TB HHD 1', 'IP (IPv4)', 'Root access / Remote Desktop', '24/7 Support',],
     },
   ];
   
@@ -47,12 +47,13 @@ const plans = [
       <section class="prueba">
       <div class="package">
       <div class="package2">
-       <h2>${plan.name}</h2>
-        <p>Price: ${plan.price}</p>
-        <p>${plan.savePercentage} (was: ${plan.savePrice})</p>
+       <p class="title__plan__info">${plan.name}</p>
+       <div class="bg__color__plan">
+        <p class="price__plan1">Price: ${plan.price} Mo</p>
+        </div>
       <ul>
         ${plan.features.map(feature => `
-          <li>
+          <liclass="check__plans" >
             <div class="check__plans">
               <img class="check__blue" src="/src/img/icons/check.png" alt="">
               <p>${feature}</p>
@@ -60,7 +61,7 @@ const plans = [
           </li>`).join('')}
       </ul>
       <div class="btn__chose-container">
-        <a href="${plan.url}" target="_blank"><button class="btn__plan__configure">Chose plan</button></a>
+        <a href="${plan.url}"><button class="btn__plan__configure">Chose plan</button></a>
       </div>
       </div>
       </div>
