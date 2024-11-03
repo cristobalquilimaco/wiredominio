@@ -209,6 +209,7 @@
     justify-content: center;
     gap: 1rem;
     padding: 1.5rem;
+    color: var(--color-brand);
 }
 
 .btn__plan__configure{
