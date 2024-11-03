@@ -230,11 +230,6 @@
     font-weight:500;
 }
 
-.check__plans{
-    display: flex;
-    gap: 0.5rem;
-    padding-left: 20px;
-}
 
 .price__plan1{
     font-size: 28px;
@@ -252,6 +247,14 @@
     color: var(--color-letter-text);
     font-size: 20px;
 }
+
+.check__plans{
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 20px;
+    align-items: center;
+}
+
 
 .check__plans:hover{
     background-color: var(--color-bottom);
