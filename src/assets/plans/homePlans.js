@@ -51,12 +51,12 @@ const plans = [
        <div class="bg__color__plan">
         <p class="price__plan1">Price: ${plan.price} Mo</p>
         </div>
-      <ul>
+      <ul class="features__section">
         ${plan.features.map(feature => `
-          <liclass="check__plans" >
+          <li class="check__plans" >
             <div class="check__plans">
               <img class="check__blue" src="/src/img/icons/check.png" alt="">
-              <p>${feature}</p>
+              <p class="style__features">${feature}</p>
             </div>
           </li>`).join('')}
       </ul>
