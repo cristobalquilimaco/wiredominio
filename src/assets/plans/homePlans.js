@@ -10,7 +10,7 @@ const plans = [
     },
     {
       id: 2,
-      name: 'Dedicated Servers in Miami, FL - Medium',
+      name: 'Dedicated Servers - Medium',
       url: 'https://my.donhoster.com/cart.php?a=add&pid=8',
       price: '$82 USD',
       savePrice: '$9.99',
@@ -28,7 +28,7 @@ const plans = [
     },
     {
       id: 4,
-      name: 'Dedicated Servers in Miami, FL - Large',
+      name: 'Dedicated Servers - Large',
       url: 'https://my.donhoster.com/cart.php?a=add&pid=11',
       price: '$120.00 USD',
       savePrice: '$9.99',
