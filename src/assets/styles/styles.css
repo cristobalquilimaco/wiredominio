@@ -95,6 +95,7 @@
     background-color: var(--color-letter-text);
     border-radius: 5px;
     font-weight: bold;
+    transition: background ease-in .3s;
 }
 
 .principal__btn__banner:hover{
@@ -359,6 +360,7 @@
 .quick__menu{
     font-size: 20px;
     font-weight: bold;
+    color: var(--color-hover);
 }
 
 .menu__footer__section{
