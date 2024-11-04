@@ -55,7 +55,6 @@
     gap: 1.5rem;
 }
 
-
 .check__blue{
     width: 25px;
 }
@@ -63,7 +62,7 @@
 .icon__infor__list{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.2rem;
     font-weight: bold;
     font-size: 15px;
