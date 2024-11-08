@@ -44,7 +44,6 @@ button.principal__btn__banner {
     max-height: 800px; /* Ajusta la altura máxima según sea necesario */
     overflow: hidden;
     aspect-ratio: 16 / 9;
-    
   }
   
   .article__with__img img.banner__web {
@@ -459,18 +458,41 @@ button.principal__btn__banner {
 
 @media (width >= 700px) {
 
+    /* BANNER PRINCIPAL */
     .info__banner{
-        width: 600px;
+        margin-left: 300px;
+        max-width: 500px;
+        padding: 2em;
+    }
+    
+    .btn__price {
+        margin-top: 20px;
+    }
+
+    .info__text__list {
+        justify-content: flex-start;
+    }
+
+    .imagen__and__banner{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
     }
 
     .banner__img__small{
-        display: block;
         z-index: 9999;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        position:absolute;
+        top: 40%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        z-index: 2; 
     }
+
 
 
 
@@ -479,18 +501,16 @@ button.principal__btn__banner {
         height: 50px; 
         object-fit: contain;
       }
-    .server__slide{
-        width: 350px;
-        height: 250px;
-    }
 
-    .principal__banner{
+
+    .imagen__and__banner{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        gap: 6rem;
+        width: 350px;
+        height: auto;
     }
+
 
     .icon__info__details{
         display: flex;
@@ -499,10 +519,20 @@ button.principal__btn__banner {
         justify-content: center;
     }
 
+    .image__server{
+        width: 100px;
+    }
+
     .border__icon{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: 1px solid var(--color-bottom);
-        padding: 1rem;
+        padding: 0.5rem;
         border-radius: 50%;
+        aspect-ratio: 1;
     }
 
     /* ------------------------WHAT WE DO SECTION -------------------*/
@@ -587,6 +617,7 @@ button.principal__btn__banner {
     margin-top: 100px;
     gap: 2rem;
 }
+
 
 }
 
