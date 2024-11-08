@@ -45,26 +45,26 @@ const plans = [
   
       planDiv.innerHTML = `
       <section class="prueba">
-      <div class="package">
-      <div class="package2">
-       <p class="title__plan__info">${plan.name}</p>
-       <div class="bg__color__plan">
-        <p class="price__plan1">Price: ${plan.price} Mo</p>
-        </div>
-      <ul class="features__section">
-        ${plan.features.map(feature => `
-          <li class="check__plans" >
-            <div class="check__plans">
-              <img class="check__blue" src="/src/img/icons/check.png" alt="">
-              <p class="style__features">${feature}</p>
+ <div class="package">
+        <div class="package2">
+            <p class="title__plan__info">${plan.name}</p>
+            <div class="bg__color__plan">
+                <p class="price__plan1">Price: ${plan.price} Mo</p>
             </div>
-          </li>`).join('')}
-      </ul>
-      <div class="btn__chose-container">
-        <a href="${plan.url}"><button class="btn__plan__configure">Chose plan</button></a>
-      </div>
-      </div>
-      </div>
+            <ul class="features__section">
+                ${plan.features.map(feature => `
+                    <li class="check__plans">
+                        <div class="check__plans">
+                            <img class="check__blue" src="/src/img/icons/check.png" alt="">
+                            <p class="style__features">${feature}</p>
+                        </div>
+                    </li>`).join('')}
+            </ul>
+            <div class="btn__chose-container">
+                <a href="${plan.url}"><button class="btn__plan__configure">Chose plan</button></a>
+            </div>
+        </div>
+    </div>
 </section>
       `;
   

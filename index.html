@@ -1,22 +1,49 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/assets/styles/styles.css">
-    <link rel="stylesheet" href="/src/assets/styles/resets.css">
-    <link rel="stylesheet" href="/src/assets/styles/navbar.css">
-    <script src="/src/assets/js/animations.js" defer></script>
-    <script src="/src/assets/js/main.js" defer></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Hojas de estilo -->
+        <link rel="stylesheet" href="critical.css">
+        <link rel="preload" href="/src/assets/styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/src/assets/styles/styles.css"></noscript>
+    
+        <link rel="preload" href="/src/assets/styles/resets.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/src/assets/styles/resets.css"></noscript>
+    
+        <link rel="preload" href="/src/assets/styles/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/src/assets/styles/navbar.css"></noscript>
+    
+        <!-- Fuentes de Google -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" as="style">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        
 
-    <title>Donhoster - Dedicated Dedicated Servers Solutions</title>
-    <meta name="description" content="Donhoster offers high-performance dedicated servers with 24/7 support, ensuring secure and reliable hosting for your business needs.">
-</head>
+        <!-- Imágenes -->
+        <link rel="preload" href="./src/img/img/datacenterbanner.webp" as="image" type="image/webp" width="1024" height="576">
+        <link rel="preload" as="image" href="./src/img/img/server-slide.png">
+    
+        <!-- Scripts -->
+        <script src="/src/assets/js/animations.js" defer></script>
+        <script src="/src/assets/js/main.js" defer></script>
+    
+        <title>Donhoster - Dedicated Servers Solutions</title>
+        <meta name="description" content="Donhoster offers high-performance dedicated servers with 24/7 support, ensuring secure and reliable hosting for your business needs.">
+    </head>
+    
 <body>
+    <!-- Pantalla de carga -->
+    <!-- <div class="cssloader" id="loader">
+        <div class="triangle1"></div>
+        <div class="triangle2"></div>
+        <p class="text">Please Wait</p>
+    </div> -->
+
     <header class="principal__header">
         <div class="sub__menu__1">
             <div class="email__contact">
                 <a class="email__contact" href="mailto:admin@donhoster.com">
-                    <img class="email__icon" src="/src/img/icons/ic-mail.png" alt="Email Icon">admin@netbyhost.com
+                    <img class="email__icon" src="/src/img/icons/ic-mail.png" alt="Email Icon" width="20px" height="20px"> admin@donhoster.com
                 </a>
             </div>
             <div class="menu__responsive">
@@ -40,7 +67,12 @@
             <li class="list__principal__menu1"><a href="">Login</a></li>
         </ul>
         <div class="menu__Logo">
-            <a href="/"><img class="Logo__img" src="/src/img/icons/logo.png" alt="Donhoster Logo"></a>
+            <a href="/">
+                <picture>
+                    <source srcset="/src/img/icons/logo.webp" type="image/webp">
+                    <img class="Logo__img" width="200" height="30" src="/src/img/icons/logo.webp" alt="Donhoster Logo">
+                </picture>
+            </a>
             <button class="button__menu">Get Info</button>
             <div onclick="toggleMenu()" class="line">
                 <div class="line_menu"></div>
@@ -65,39 +97,40 @@
             </ul>
         </nav>
     </header>
-    
+
     <!-------------------------- BANNER PRINCIPAL--------------------- -->
-    <section class="principal__banner">
-        <article class="article__with__img">
-            <img class="banner__web" src="./src/img/img/datacenterbanner.jpg" alt="Data Center Banner">
+    <section class="principal__banner" >
+        <article class="article__with__img" loading="lazy" style="width:100%; height:400px; aspect-ratio: 16/9;">
+            <img class="banner__web" srcset="./src/img/img/datacenterbanner-small.webp 320w, ./src/img/img/datacenterbanner.webp 1024w" sizes="(max-width: 600px) 320px, 1024px" loading="lazy" alt="Data Center Banner">
         </article>
+        
         <div class="info__banner">
             <div class="title_info_web">
-                <h1>Dedicated Web Dedicated Servers Services</h1>
+                <h1>Dedicated servers</h1>
                 <span>Fast, Secure, Reliable</span>
-                <p>Donhoster provides dedicated servers that offer exceptional performance and security. Our global network of data centers ensures geographic diversity and redundancy tailored to your business needs.</p>
+                <p>Donhoster provides dedicated servers that offer exceptional performance and security.</p>
             </div>
             <div class="info__text__list">
                 <div class="img__check__list">
                     <div class="icon__infor__list">
-                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon"><p>24/7 Server Monitoring</p>
+                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon" width="32" height="32"><p>24/7 Server Monitoring</p>
                     </div>
                     <div class="icon__infor__list">
-                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon"><p>High Availability</p>
+                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon" width="32" height="32"><p>High Availability</p>
                     </div>
                     <div class="icon__infor__list">
-                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon"><p>Scalable Resources</p>
+                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon" width="32" height="32"><p>Scalable Resources</p>
                     </div>
                 </div>
                 <div>
                     <div class="icon__infor__list">
-                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon"><p>Advanced Security</p>
+                        <img class="check__blue" loading="lazy" src="/src/img/icons/check.png" alt="Check Icon" width="25" height="25"><p>Advanced Security</p>
                     </div>
                     <div class="icon__infor__list">
-                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon"><p>Custom Configuration</p>
+                        <img class="check__blue" loading="lazy" src="/src/img/icons/check.png" alt="Check Icon" width="25" height="25"><p>Custom Configuration</p>
                     </div>
                     <div class="icon__infor__list">
-                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon"><p>Expert Support</p>
+                        <img class="check__blue" loading="lazy" src="/src/img/icons/check.png" alt="Check Icon" width="25" height="25"><p>Expert Support</p>
                     </div>
                 </div>
             </div>
@@ -107,59 +140,62 @@
             </div>
         </div>
         <div class="banner__img__small">
-            <img class="server__slide" src="./src/img/img/server-slide.png" alt="Server Slide">
+            <img srcset="./src/img/img/datacenterbanner-small.webp 320w, ./src/img/img/datacenterbanner.webp 1024w"
+     sizes="(max-width: 600px) 320px, 1024px"
+     loading="lazy" alt="Data Center Banner"
+     style="width: 100%; height: auto; aspect-ratio: 16/9;">
             <div class="icon__info__details">
-                <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-1.png" alt="Security Icon"></div>
-                <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-2.png" alt="Performance Icon"></div>
-                <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-3.png" alt="Support Icon"></div>
+                <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-1.png" alt="Security Icon" width="32" height="32" loading="lazy"></div>
+                <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-2.png" alt="Performance Icon" width="32" height="32" loading="lazy"></div>
+                <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-3.png" alt="Support Icon" width="32" height="32" loading="lazy"></div>
             </div>
         </div>
     </section>
-    
+
     <!---------------- SECTION OF PLANS  ----------------------> 
-    <div id="plans-container" class="principal__package">
+    <div id="plans-container" class="principal__package" id="loader">
         <!-- Plans will be dynamically loaded here -->
     </div>
-    
-    <!-------------- INFORMATION SECTION ------------------->
+
+    <!-------------- INFORMATION SECTION ------------------->    
     <section class="What__We__Do">
         <div class="image__relative">
-            <img class="banner__web1" src="./src/img/img/datacenterbanner.jpg" alt="Data Center Services">
+            <img class="banner__web1" loading="lazy" src="./src/img/img/datacenterbanner.webp" alt="Data Center Services" loading="lazy">
         </div>
         <div class="first__component">
             <div class="icon__info__section1">
-                <img class="icon__service__why" src="./src/img/icons/ic-service-1.png" alt="Support Icon">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-1.png" alt="Support Icon" width="90" height="90" loading="lazy">
                 <p class="title__inf__description">World-Class 24/7 Support</p>
                 <p>Our dedicated support team is available around the clock. At Donhoster, we maintain high standards and conduct regular compliance audits to ensure exceptional service for your business.</p>
             </div>
             <div class="icon__info__section1">
-                <img class="icon__service__why" src="./src/img/icons/ic-service-2.png" alt="Scalability Icon">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-2.png" alt="Scalability Icon" width="90" height="90" loading="lazy">
                 <p class="title__inf__description">Scalable Solutions</p>
                 <p>Our dedicated servers are designed to grow with your business, providing flexible resource allocation to meet your evolving needs.</p>
             </div>
             <div class="icon__info__section1">
-                <img class="icon__service__why" src="./src/img/icons/ic-service-3.png" alt="Security Icon">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-3.png" alt="Security Icon" width="90" height="90" loading="lazy">
                 <p class="title__inf__description">Advanced Security Measures</p>
                 <p>Your data's security is our priority. We implement robust security protocols to protect your information and maintain compliance.</p>
             </div>
             <div class="icon__info__section1">
-                <img class="icon__service__why" src="./src/img/icons/ic-service-4.png" alt="Customization Icon">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-4.png" alt="Customization Icon" width="90" height="90" loading="lazy">
                 <p class="title__inf__description">Custom Configurations</p>
                 <p>Tailor your server setup to fit your specific requirements, ensuring optimal performance for your applications.</p>
             </div>
             <div class="icon__info__section1">
-                <img class="icon__service__why" src="./src/img/icons/ic-service-5.png" alt="Reliability Icon">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-5.png" alt="Reliability Icon" width="90" height="90" loading="lazy">
                 <p class="title__inf__description">Reliable Uptime</p>
                 <p>Count on us for consistent uptime and performance, keeping your business operational around the clock.</p>
             </div>
             <div class="icon__info__section1">
-                <img class="icon__service__why" src="./src/img/icons/ic-service-6.png" alt="Expert Support Icon">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-6.png" alt="Expert Support Icon" width="90" height="90" loading="lazy">
                 <p class="title__inf__description">Expert Technical Support</p>
                 <p>Our knowledgeable staff is here to assist you with any technical challenges, ensuring your operations run smoothly.</p>
             </div>
         </div>
     </section>
-    
+
     <!----------------- FOOTER ------------------->
     <footer class="principal__footer">
         <div class="menu__footer__section">
@@ -173,8 +209,8 @@
             </ul>
             <ul class="footer__menu">
                 <p class="quick__menu">Company</p>
-                <li class="list__principal__footer"><a href="">About Us</a></li>
-                <li class="list__principal__footer"><a href="">Contact Us</a></li>
+                <a href=""><li class="list__principal__footer"><a href="">About Us</a></li></a>
+                <a href=""><li class="list__principal__footer"><a href="">Contact Us</a></li></a>
                 <li class="list__principal__footer"><a href="">VPS</a></li>
             </ul>
             <ul class="footer__menu">
@@ -184,18 +220,18 @@
             </ul>
             <ul class="Footer__menu__social">
                 <div class="info__social__l">
-                    <a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/xlogo.png" alt="Twitter Logo"></a>Twitter
+                    <a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/xlogo.png" alt="Twitter Logo" loading="lazy" width="40" height="40"></a>Twitter
                 </div>
                 <div class="info__social__l">
-                    <a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/instagram.png" alt="Instagram Logo"></a>Instagram
+                    <a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/instagram.png" alt="Instagram Logo" loading="lazy" width="40" height="40"></a>Instagram
                 </div>
                 <div class="info__social__l">
-                    <a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/pngtree-facebook-social-media-icon-png-image_6315968.png" alt="Facebook Logo"></a>Facebook
+                    <a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/pngtree-facebook-social-media-icon-png-image_6315968.png" alt="Facebook Logo" loading="lazy" width="40" height="40"></a>Facebook
                 </div>
             </ul>
         </div>
         <div class="info__footer"></div>
     </footer>
-    <script src="./src/assets/plans/homePlans.js"></script>
+    <script src="./src/assets/plans/homePlans.js" defer></script>
 </body>
 </html>

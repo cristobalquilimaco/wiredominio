@@ -25,3 +25,22 @@ function toggleVisibility(){
 window.addEventListener('resize', ()=>{
     toggleVisibility()
 })
+
+// ANIMATION CARDS
+
+
+// LOADING PAGE
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const loader = document.getElementById('loader');
+
+//     setTimeout(() => {
+//         loader.style.display = 'none';
+//         document.body.style.overflow = 'auto';
+//     }, 3000); 
+// });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.classList.add('loaded');
+});

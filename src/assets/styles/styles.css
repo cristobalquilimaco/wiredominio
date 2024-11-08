@@ -10,6 +10,17 @@
     --max--width-screen: 2400px;
 }
 
+#plans-container.principal__package {
+    min-height: 300px; /* Ajusta este valor según el tamaño de tus planes */
+}
+
+
+@font-face {
+    font-family: DM Sans, sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap') format('woff2');
+    font-display: swap;
+}
+
 /*--------------- BANNER PRINCIPAL ---------------*/
 
 .principal__banner{
@@ -17,18 +28,31 @@
     margin-top: 7px;
 }
 
+button.principal__btn__banner {
+    min-width: 200px; /* Establece un tamaño mínimo */
+}
+
+
+#plans-container {
+    min-height: 300px; /* Establecer un valor que se aproxime al tamaño esperado */
+}
+
 .article__with__img {
     position: absolute;
     width: 100%;
-    max-height: 500px; /* Ajusta la altura máxima según sea necesario */
+    height: 100%;
+    max-height: 800px; /* Ajusta la altura máxima según sea necesario */
     overflow: hidden;
+    aspect-ratio: 16 / 9;
+    
   }
   
   .article__with__img img.banner__web {
     width: 100%;
     height: 400px;
     display: block;
-    z-index: 1; /* Asegura que la imagen esté por encima del fondo oscuro */
+    z-index: 1; 
+    object-fit: cover;
   }
   
   .article__with__img::before {
@@ -58,6 +82,7 @@
 
 .check__blue{
     width: 25px;
+    height: 25px;
 }
 
 .icon__infor__list{
@@ -67,12 +92,14 @@
     gap: 0.2rem;
     font-weight: bold;
     font-size: 15px;
+    font-display: swap;
 }
 
 .principal__price__banner{
     font-weight: bold;
     font-size: 40px;
     color: var(--color-letter-text);
+    font-display: swap;
 }
 
 .principal__price__banner>span{
@@ -106,6 +133,12 @@
 
 .banner__img__small{
     display: none;
+}
+
+.banner__img__small img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 600 / 400; 
 }
 
 /* ------------------PLANS SECTIONS------------------- */
@@ -142,6 +175,7 @@
     border-radius: 20px;
     text-align: center;
     transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+    
   }
   
   .package:hover {
@@ -177,6 +211,8 @@
     align-items:flex-end;
     justify-content: center;
   }
+
+  
   
 /* estilos adicionales  */
 /* estilos adicionales  */
@@ -244,6 +280,7 @@
     justify-content: center;
     color: var(--color-sub_menu1);
     font-weight:500;
+    transition: ease-in .4s;
 }
 
 .btn__plan__configure:hover{
@@ -251,7 +288,7 @@
     border: 1px solid var(--color-hover);
     color: var(--color-letter-text);
     font-size: 20px;
-    
+    transform: scale(1.05);
 }
 
 .check__plans{
@@ -299,7 +336,7 @@
 
 .image__relative img.banner__web1 {
     width: 100%;
-    height: 1800px;
+    height: 1600px;
     z-index: 1; /* Asegura que la imagen esté por encima del fondo oscuro */
   }
 
@@ -362,7 +399,7 @@
 .quick__menu{
     font-size: 20px;
     font-weight: bold;
-    color: var(--color-hover);
+    color: var(--color-letter-text);
 }
 
 .menu__footer__section{
@@ -435,6 +472,8 @@
         justify-content: center;
     }
 
+
+
     .icon__shield {
         width: 50px;
         height: 50px; 
@@ -442,6 +481,7 @@
       }
     .server__slide{
         width: 350px;
+        height: 250px;
     }
 
     .principal__banner{
@@ -485,8 +525,9 @@
 
 
 .image__relative img.banner__web1 {
+    object-fit:fill;
     width: 100%;
-    height: 800px;
+    height: 600px;
     display: block;
     z-index: 1; /* Asegura que la imagen esté por encima del fondo oscuro */
   }
@@ -516,6 +557,7 @@
 
 .icon__service__why{
     width: 90px;
+    height: 90px;
 }
 
 

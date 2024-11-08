@@ -35,6 +35,9 @@
 
 .email__icon {
     width: 20px;
+    height: 20px;
+    aspect-ratio: 1;
+    object-fit: contain;
 }
 
 .email__contact {
@@ -60,9 +63,11 @@
 
 .Logo__img {
     width: 200px;
+    height: 30px;
 }
 
 .button__menu {
+    color: var(--color-letter-text);
     width: 100px;
     height: 50px;
     background-color: var(--color-bottom);
