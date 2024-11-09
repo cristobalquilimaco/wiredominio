@@ -453,6 +453,211 @@ button.principal__btn__banner {
     gap: 1rem;
 }
 
+/* ---- WHY DON HOSTER STYLES ---- */
+/* ---- WHY DON HOSTER STYLES ---- */
+
+.btn_learn_more{
+    width: 200px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--color-letter-btn);
+    background-color: var(--color-bottom);
+    margin-top: 20px;
+  }
+
+.animatin,
+.animatin_reverse {
+  opacity: 0;
+  transform: translateY(50px);  /* Los elementos se desplazan hacia abajo */
+  transition: opacity 1s ease-out, transform 1s ease-out;  /* Suavizado */
+}
+
+.animatin_reverse {
+  transform: translateY(-50px); /* Los elementos con 'animatin_reverse' se desplazan hacia arriba */
+}
+
+/* Clases cuando la animación está activa */
+.animate-scroll {
+  opacity: 1;   /* Se vuelve visible */
+  transform: translateY(0);  /* Vuelve a su posición original */
+}
+
+.principal__whydonhoster{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.title__why{
+    color: var(--color-letter-btn);
+    font-size: 23px;
+    margin-top: 1em;
+}
+
+.color__why{
+    color: var(--color-btn);
+}
+
+.principal__info_why{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.icon__whydondonhoster{
+    width: 90px;
+    height: 90px;
+}
+
+.info__why__donhoster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon__info_why{
+    width: 80px;
+}
+
+.title__info__why{
+    color: var(--color-blur-icon);
+}
+
+
+.info__description{
+    text-align: center;
+    margin-top: 0.4em;
+    color: var(--color-letter-btn);
+}
+
+.icon__banner__desktop{
+    display: none;
+}
+
+@media (width >= 700px) {
+
+    .title__why{
+        font-size: 40px;
+        margin-bottom: 1em;
+    }
+
+    .principal__info_why{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first__section__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12rem;
+    }
+
+    .info__why__donhoster{
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .info__why__reverse{
+        flex-direction: row;
+    }
+
+    .icon__banner__desktop{
+        display: block;
+        width: 220px;
+        border: 1px solid var(--color-bottom);
+        border-radius: 50%;
+    }
+
+    .info__description{
+        width: 400px;
+    }
+
+    .info__description{
+        text-align: end;
+    }
+
+    .text__info__reverse{
+        text-align: start;
+    }
+
+    .icon__border__info{
+        border: 1px solid var(--color-bottom);
+        border-radius: 50%;
+        padding: 1.5rem;
+        animation: shine 2s infinite;
+    }
+
+    .line__border4::before {
+        content: '';
+        position: absolute;
+        top: -16%;
+        left: -3%;
+        width: 3px;
+        height: 51%;
+        background-color: var(--color-bottom);
+        animation: shine 2s linear infinite;
+        transform: translateX(-10%) rotate(125deg);
+      }
+
+      .line__border3::before {
+        content: '';
+        position: absolute;
+        top: 65%;
+        left: -3%;
+        width: 3px;
+        height: 51%;
+        background-color: var(--color-bottom);
+        animation: shine 2s linear infinite;
+        transform: translateX(-10%) rotate(-125deg);
+      }
+
+      .line__border2::before {
+        content: '';
+        position: absolute;
+        top: -21%;
+        left: 102%;
+        width: 3px;
+        height: 51%;
+        background-color: var(--color-bottom);
+        animation: shine 2s linear infinite;
+        transform: translateX(-10%) rotate(-125deg)
+      }
+      .line__border1::before {
+        content: '';
+        position: absolute;
+        top: 70%;
+        left: 102%;
+        width: 3px;
+        height: 51%;
+        background-color: var(--color-bottom);
+        animation: shine 2s linear infinite;
+        transform: translateX(-10%) rotate(125deg);
+      }
+
+    @keyframes shine {
+        0% {
+          box-shadow: 0 0 10px transparent; /* Cambia la sombra inicial */
+        }
+        50% {
+          box-shadow: 0 0 20px var(--color-bottom); /* Aumenta la sombra para simular el brillo */
+        }
+        100% {
+          box-shadow: 0 0 10px transparent; /* Vuelve a la sombra inicial */
+        }
+      }
+
+}
+
 
 /* ------------------MEDIA QUERY PANTALLAS GRANDES--------------------------- */
 
