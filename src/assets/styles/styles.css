@@ -168,7 +168,7 @@ button.principal__btn__banner {
 /* estilos adicionales  */
 
 .package {
-    width: 350px;
+    width: 300px;
     height: 500px;
     background-image: linear-gradient(163deg, #ff00ff 0%, #3700ff 100%);
     border-radius: 20px;
@@ -258,7 +258,7 @@ button.principal__btn__banner {
 
 
 .price__plan1{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -465,6 +465,7 @@ button.principal__btn__banner {
     color: var(--color-letter-text);
     background-color: var(--color-bottom);
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 .animatin,
@@ -670,7 +671,7 @@ button.principal__btn__banner {
     justify-content: center;
     gap: 1rem;
     margin-top: 2em;
-    background-color: var(--color-hosting);
+    background-color: #5e26be23;
     padding-bottom: 2em;
     width: 100%;
 }
