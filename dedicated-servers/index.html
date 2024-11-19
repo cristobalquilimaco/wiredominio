@@ -13,6 +13,9 @@
     
         <link rel="preload" href="/src/assets/styles/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/src/assets/styles/navbar.css"></noscript>
+
+        <link rel="preload" href="/src/assets/styles/hosting.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/src/assets/styles/hosting.css"></noscript>
     
         <!-- Fuentes de Google -->
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" as="style">
@@ -93,30 +96,60 @@
         </nav>
     </header>
     <!-------------------------- BANNER PRINCIPAL--------------------- -->
-        <section class="principal__banner__hosting">
-            <article class="article__with__img__hosting">
-                <img class="banner__web__hosting" src="/src//img/img/datacenterbanner.jpg" alt="">
-            </article>
-            <div class="info__banner_hosting">
-                <div class="title_info_web__hosting">
-                    <h1>SERVICIOS DE WEB HOSTING</h1>
-                    <span>Fast, Secure, Reliable</span>
-                    <p>Wiredominio dedicated servers give you ultimate flexibility and safety. Our network of data centers in Europe, US, and Asia provides geographic diversity and redundancy that fits your budget.</p>
-                </div>
-                <div class="arrow_down__info">
-                    <div class="circle__arrow">
-                        <img class="arrow_down" src="/src/img/icons/arrow_down.png" alt="">
-                    </div>
-                   
-                    <div class="especific__plan">
-                        <p>Starting at</p>
-                        <p class="principal__price__banner">$1.24</p>
-                        <p>per month</p>
-                    </div>
-                </div>
-
+    <section class="principal__banner" >
+        <article class="article__with__img" loading="lazy" style="width:100%; height:400px; aspect-ratio: 16/9;">
+            <img class="banner__web" srcset="./src/img/img/datacenterbanner-small.webp 320w, ./src/img/img/datacenterbanner.webp 1024w" sizes="(max-width: 600px) 320px, 1024px" loading="lazy" alt="Data Center Banner">
+        </article>
+        
+        <div class="info__banner">
+            <div class="title_info_web">
+                <h1>Dedicated servers</h1>
+                <span>Fast, Secure, Reliable</span>
+                <p>Donhoster provides dedicated servers that offer exceptional performance and security.</p>
             </div>
-        </section>
+            <div class="info__text__list">
+                <div class="img__check__list">
+                    <div class="icon__infor__list">
+                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon" width="32" height="32"><p>24/7 Server Monitoring</p>
+                    </div>
+                    <div class="icon__infor__list">
+                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon" width="32" height="32"><p>High Availability</p>
+                    </div>
+                    <div class="icon__infor__list">
+                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon" width="32" height="32"><p>Scalable Resources</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon__infor__list">
+                        <img class="check__blue" loading="lazy" src="/src/img/icons/check.png" alt="Check Icon" width="25" height="25"><p>Advanced Security</p>
+                    </div>
+                    <div class="icon__infor__list">
+                        <img class="check__blue" loading="lazy" src="/src/img/icons/check.png" alt="Check Icon" width="25" height="25"><p>Custom Configuration</p>
+                    </div>
+                    <div class="icon__infor__list">
+                        <img class="check__blue" loading="lazy" src="/src/img/icons/check.png" alt="Check Icon" width="25" height="25"><p>Expert Support</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn__price">
+                <p class="principal__price__banner">$60/<span>month</span></p>
+                <button class="principal__btn__banner">All dedicated server plans</button>
+            </div>
+        </div>
+        <div class="banner__img__small">
+            <article class="imagen__and__banner">
+                <img class="server__slide" srcset="./src/img/img/banner-slide-img1.png 320w, ./src/img/img/banner-slide-img1.png 1024w"
+                sizes="(max-width: 500px) 320px, 1024px"
+                loading="lazy" alt="Data Center Banner"
+                style="width: 100%; height: auto; aspect-ratio: 16/14;">
+                       <div class="icon__info__details">
+                           <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-1.png" alt="Security Icon" width="80" height="80" loading="lazy"></div>
+                           <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-2.png" alt="Performance Icon" width="80" height="80" loading="lazy"></div>
+                           <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-3.png" alt="Support Icon" width="80" height="80" loading="lazy"></div>
+                       </div>
+            </article>
+        </div>
+    </section>
         <!---------------- SECTION OF PLANS  ---------------------->
         <section class="plans_section">
             <!------------ INDIVIDUAL PLAN ----------------->

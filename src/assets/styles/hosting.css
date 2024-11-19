@@ -173,10 +173,6 @@
     border-bottom-color: var(--color-bottom);
 }
 
-
-
-
-
 /* ---------------MEDIA QUERY BIG SCREEN------------------- */
 
 @media (width >= 700px) {
