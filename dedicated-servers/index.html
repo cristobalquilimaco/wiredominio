@@ -1,29 +1,50 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/assets/styles/styles.css">
-    <link rel="stylesheet" href="/src/assets/styles/resets.css">
-    <link rel="stylesheet" href="/src/assets/styles/navbar.css">
-    <link rel="stylesheet" href="/src/assets/styles/hosting.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="/src/assets/js/animations.js" defer></script>
-    <script src="/src/assets/js/main.js" defer></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Hojas de estilo -->
+        <link rel="stylesheet" href="critical.css">
+        <link rel="preload" href="/src/assets/styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/src/assets/styles/styles.css"></noscript>
+    
+        <link rel="preload" href="/src/assets/styles/resets.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/src/assets/styles/resets.css"></noscript>
+    
+        <link rel="preload" href="/src/assets/styles/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/src/assets/styles/navbar.css"></noscript>
+    
+        <!-- Fuentes de Google -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" as="style">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        
 
-    <title>Document</title>
-</head>
+        <!-- Imágenes -->
+        <link rel="preload" href="./src/img/img/datacenterbanner.webp" as="image" type="image/webp" width="1024" height="576">
+        <link rel="preload" as="image" href="./src/img/img/server-slide.png">
+    
+        <!-- Scripts -->
+        <script src="/src/assets/js/animations.js" defer></script>
+        <script src="/src/assets/js/main.js" defer></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js" defer></script>
+
+        <title>Donhoster - Dedicated Servers Solutions</title>
+        <meta name="description" content="Donhoster offers high-performance dedicated servers with 24/7 support, ensuring secure and reliable hosting for your business needs.">
+    </head>
+    
 <body>
     <header class="principal__header">
         <div class="sub__menu__1">
             <div class="email__contact">
                 <a class="email__contact" href="mailto:admin@donhoster.com">
-                    <img class="email__icon" src="/src/img/icons/ic-mail.png" alt="Email Icon">admin@netbyhost.com
+                    <img class="email__icon" src="/src/img/icons/ic-mail.png" alt="Email Icon" width="20px" height="20px"> admin@donhoster.com
                 </a>
             </div>
             <div class="menu__responsive">
                 <ul class="sub__menu__2">
                     <li class="list__principal__menu0"><a href="">Blog</a></li>
-                    <li class="list__principal__menu0"><a href="">Company</a></li>
+                    <li class="list__principal__menu0"><a href="about-donhoster/index.html">Company</a></li>
                     <li class="list__principal__menu0"><a href="">Contact</a></li>
                     <li class="list__principal__menu0"><a href="">Login</a></li>
                 </ul>
@@ -36,12 +57,17 @@
         </div>
         <ul class="sub__menu__2_mobile">
             <li class="list__principal__menu1"><a href="">Blog</a></li>
-            <li class="list__principal__menu1"><a href="">Company</a></li>
+            <li class="list__principal__menu1"><a href="about-donhoster/index.html">Company</a></li>
             <li class="list__principal__menu1"><a href="">Contact</a></li>
             <li class="list__principal__menu1"><a href="">Login</a></li>
         </ul>
         <div class="menu__Logo">
-            <img class="Logo__img" src="/src/img/icons/logo.png" alt="Donhoster Logo">
+            <a href="/">
+                <picture>
+                    <source srcset="/src/img/icons/logo.webp" type="image/webp">
+                    <img class="Logo__img" width="200" height="30" src="/src/img/icons/logo.webp" alt="Donhoster Logo">
+                </picture>
+            </a>
             <button class="button__menu">Get Info</button>
             <div onclick="toggleMenu()" class="line">
                 <div class="line_menu"></div>
@@ -51,18 +77,18 @@
         </div>
         <nav class="nav_menu">
             <ul class="principal__menu">
-                <li class="list__principal__menu"><a href="">Home</a></li>
-                <li class="list__principal__menu"><a href="/hosting/index.html">Hosting</a></li>
-                <li class="list__principal__menu"><a href="">SSL Certificates</a></li>
-                <li class="list__principal__menu"><a href="">Resellers</a></li>
-                <li class="list__principal__menu"><a href="">Help</a></li>
+                <li class="list__principal__menu"><a href="/">Home</a></li>
+                <li class="list__principal__menu"><a href="/hosting/index.html">Dedicated Servers</a></li>
+                <li class="list__principal__menu"><a href="/vps/">VPS</a></li>
+                <li class="list__principal__menu"><a href="">Cloud</a></li>
+                <li class="list__principal__menu"><a href="">Web Hosting</a></li>
             </ul>
             <ul class="principal__menu__mobile">
                 <li class="list__principal__menu2"><a href="">Home</a></li>
-                <li class="list__principal__menu2"><a href="">Hosting</a></li>
-                <li class="list__principal__menu2"><a href="">SSL Certificates</a></li>
-                <li class="list__principal__menu2"><a href="">Resellers</a></li>
-                <li class="list__principal__menu2"><a href="">Help</a></li>
+                <li class="list__principal__menu2"><a href="/dedicated-servers/index.html">Dedicated Servers</a></li>
+                <li class="list__principal__menu2"><a href="vps/index.html">VPS</a></li>
+                <li class="list__principal__menu2"><a href="cloud/index.html">Cloud</a></li>
+                <li class="list__principal__menu2"><a href="hosting/index.html">Web Hosting</a></li>
             </ul>
         </nav>
     </header>
