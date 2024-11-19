@@ -1,0 +1,279 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/styles/styles.css">
+    <link rel="stylesheet" href="/src/assets/styles/resets.css">
+    <link rel="stylesheet" href="/src/assets/styles/navbar.css">
+    <link rel="stylesheet" href="/src/assets/styles/hosting.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/src/assets/js/animations.js" defer></script>
+    <script src="/src/assets/js/main.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="principal__header">
+        <div class="sub__menu__1">
+            <div class="email__contact">
+                <a class="email__contact" href="mailto:admin@donhoster.com">
+                    <img class="email__icon" src="/src/img/icons/ic-mail.png" alt="Email Icon">admin@netbyhost.com
+                </a>
+            </div>
+            <div class="menu__responsive">
+                <ul class="sub__menu__2">
+                    <li class="list__principal__menu0"><a href="">Blog</a></li>
+                    <li class="list__principal__menu0"><a href="">Company</a></li>
+                    <li class="list__principal__menu0"><a href="">Contact</a></li>
+                    <li class="list__principal__menu0"><a href="">Login</a></li>
+                </ul>
+                <div onclick="toggleVisibility()" class="line">
+                    <div class="line_menu"></div>
+                    <div class="line_menu"></div>
+                    <div class="line_menu"></div>
+                </div>
+            </div>
+        </div>
+        <ul class="sub__menu__2_mobile">
+            <li class="list__principal__menu1"><a href="">Blog</a></li>
+            <li class="list__principal__menu1"><a href="">Company</a></li>
+            <li class="list__principal__menu1"><a href="">Contact</a></li>
+            <li class="list__principal__menu1"><a href="">Login</a></li>
+        </ul>
+        <div class="menu__Logo">
+            <img class="Logo__img" src="/src/img/icons/logo.png" alt="Donhoster Logo">
+            <button class="button__menu">Get Info</button>
+            <div onclick="toggleMenu()" class="line">
+                <div class="line_menu"></div>
+                <div class="line_menu"></div>
+                <div class="line_menu"></div>
+            </div>
+        </div>
+        <nav class="nav_menu">
+            <ul class="principal__menu">
+                <li class="list__principal__menu"><a href="">Home</a></li>
+                <li class="list__principal__menu"><a href="/hosting/index.html">Hosting</a></li>
+                <li class="list__principal__menu"><a href="">SSL Certificates</a></li>
+                <li class="list__principal__menu"><a href="">Resellers</a></li>
+                <li class="list__principal__menu"><a href="">Help</a></li>
+            </ul>
+            <ul class="principal__menu__mobile">
+                <li class="list__principal__menu2"><a href="">Home</a></li>
+                <li class="list__principal__menu2"><a href="">Hosting</a></li>
+                <li class="list__principal__menu2"><a href="">SSL Certificates</a></li>
+                <li class="list__principal__menu2"><a href="">Resellers</a></li>
+                <li class="list__principal__menu2"><a href="">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-------------------------- BANNER PRINCIPAL--------------------- -->
+        <section class="principal__banner__hosting">
+            <article class="article__with__img__hosting">
+                <img class="banner__web__hosting" src="/src//img/img/datacenterbanner.jpg" alt="">
+            </article>
+            <div class="info__banner_hosting">
+                <div class="title_info_web__hosting">
+                    <h1>SERVICIOS DE WEB HOSTING</h1>
+                    <span>Fast, Secure, Reliable</span>
+                    <p>Wiredominio dedicated servers give you ultimate flexibility and safety. Our network of data centers in Europe, US, and Asia provides geographic diversity and redundancy that fits your budget.</p>
+                </div>
+                <div class="arrow_down__info">
+                    <div class="circle__arrow">
+                        <img class="arrow_down" src="/src/img/icons/arrow_down.png" alt="">
+                    </div>
+                   
+                    <div class="especific__plan">
+                        <p>Starting at</p>
+                        <p class="principal__price__banner">$1.24</p>
+                        <p>per month</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!---------------- SECTION OF PLANS  ---------------------->
+        <section class="plans_section">
+            <!------------ INDIVIDUAL PLAN ----------------->
+            <div class="card__plan">
+                <p class="title__plan__info">Basico</p>
+                <div class="bg__color__plan">
+                <p class="price__plan1">$100<span class="month__currenty">/mes</span></p>
+                <button class="btn__plan__configure">Configurar</button>
+                </div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>5 GB espacio web</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>Tráfico ilimitado</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>15 cuentas de correo de 2 GB</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>160 MB por proceso PHP</p></div>
+            </div>
+            <!------------ INDIVIDUAL PLAN ----------------->
+            <!------------ INDIVIDUAL PLAN ----------------->
+            <div class="card__plan">
+                <p class="title__plan__info">Negocios</p>
+                <div class="bg__color__plan">
+                <p class="price__plan1">$100<span class="month__currenty">/mes</span></p>
+                <button class="btn__plan__configure">Configurar</button>
+                </div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>5 GB espacio web</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>Tráfico ilimitado</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>15 cuentas de correo de 2 GB</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>160 MB por proceso PHP</p></div>
+            </div>
+            <!------------ INDIVIDUAL PLAN ----------------->
+            <div class="card__plan">
+                <p class="title__plan__info">Negocios</p>
+                <div class="bg__color__plan">
+                <p class="price__plan1">$100<span class="month__currenty">/mes</span></p>
+                <button class="btn__plan__configure">Configurar</button>
+                </div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>5 GB espacio web</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>Tráfico ilimitado</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>15 cuentas de correo de 2 GB</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>160 MB por proceso PHP</p></div>
+            </div>
+            <!------------ INDIVIDUAL PLAN ----------------->
+            <div class="card__plan">
+                <p class="title__plan__info">Negocios</p>
+                <div class="bg__color__plan">
+                <p class="price__plan1">$100<span class="month__currenty">/mes</span></p>
+                <button class="btn__plan__configure">Configurar</button>
+                </div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>5 GB espacio web</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>Tráfico ilimitado</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>15 cuentas de correo de 2 GB</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>160 MB por proceso PHP</p></div>
+            </div>
+            <!------------ INDIVIDUAL PLAN ----------------->
+            <div class="card__plan">
+                <p class="title__plan__info">Negocios</p>
+                <div class="bg__color__plan">
+                <p class="price__plan1">$100<span class="month__currenty">/mes</span></p>
+                <button class="btn__plan__configure">Configurar</button>
+                </div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>5 GB espacio web</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>Tráfico ilimitado</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>15 cuentas de correo de 2 GB</p></div>
+                <div class="check__plans" ><img class="check__blue" src="/src/img//icons/check.png" alt=""><p>160 MB por proceso PHP</p></div>
+            </div>
+            <!------------ INDIVIDUAL PLAN ----------------->
+        </section>
+        <!-- BUTTON TECHNICAL -->
+        <div class="btn__technical">
+            <button class="btn_spect">Technical Specification</button>
+        </div>
+            <div class="info__configure__tech"><p class="text__technicalsuport"> Configure your Hosting to your liking</p></div>
+            <!------------ CONFIGURE HOSTING SECTION -------------------->
+            <div class="configure__section">
+                <img class="img__datacenter__configure" src="/src/img/img/datacenterbanner.jpg" alt="">
+                <div class="tab__content">
+					<div class="tab__pane">
+						<div class="plan__specs">
+							<div class="row__no__gutter">
+								<div class="col__sm">
+									<div class="description__configure">
+										<h5><i class='bx bx-hdd'></i> Disk Space</h5>
+										<h2>1 GB</h2>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="description__configure">
+										<h5><i class='bx bx-wifi' ></i> Bandwidth</h5>
+										<h2>Unlimited</h2>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="description__configure">
+										<h5><i class='bx bx-world' ></i> Additional Domains</h5>
+										<h2>1</h2>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="description__configure">
+										<h5><i class='bx bxs-user-plus' ></i> Mail Accounts</h5>
+										<h2>1</h2>
+									</div>
+								</div>								
+								<div class="col-sm-2">
+									<div class="pricing">
+										<h2 class="text-primary">$1.78USD<span>/mo</span></h2>
+									</div>
+								</div>
+								<a href="#" class="order__now">
+									Configure Now!
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        <!-------------- INFORMATION SECTION ------------------->
+        <section class="What__We__Do">
+            <div class="image__relative">
+                <img class="banner__web1" src="/src/img/img/datacenterbanner.jpg" alt="">
+            </div>
+            <div class="first__component" >
+                <div class="icon__info__section1">
+                    <img class="icon__service__why" src="/src/img/icons/ic-service-1.png" alt="">
+                    <p class="title__inf__description" >World Class 24/7 Support</p>
+                    <p>Our support team is available 24/7. At Netrouting, we hold our team to the highest of standards and complete annual compliance audits. Our team will never leave you or your business unattended.</p>
+                </div>
+                <div class="icon__info__section1">
+                    <img class="icon__service__why" src="/src/img/icons/ic-service-2.png" alt="">
+                    <p class="title__inf__description">World Class 24/7 Support</p>
+                    <p>Our support team is available 24/7. At Netrouting, we hold our team to the highest of standards and complete annual compliance audits. Our team will never leave you or your business unattended.</p>
+                </div>
+                <div class="icon__info__section1">
+                    <img class="icon__service__why" src="/src/img/icons/ic-service-3.png" alt="">
+                    <p class="title__inf__description" >World Class 24/7 Support</p>
+                    <p>Our support team is available 24/7. At Netrouting, we hold our team to the highest of standards and complete annual compliance audits. Our team will never leave you or your business unattended.</p>
+                </div>
+                <div class="icon__info__section1">
+                    <img class="icon__service__why" src="/src/img/icons/ic-service-4.png" alt="">
+                    <p class="title__inf__description" >World Class 24/7 Support</p>
+                    <p>Our support team is available 24/7. At Netrouting, we hold our team to the highest of standards and complete annual compliance audits. Our team will never leave you or your business unattended.</p>
+                </div>
+                <div class="icon__info__section1">
+                    <img class="icon__service__why" src="/src/img/icons/ic-service-5.png" alt="">
+                    <p class="title__inf__description" >World Class 24/7 Support</p>
+                    <p>Our support team is available 24/7. At Netrouting, we hold our team to the highest of standards and complete annual compliance audits. Our team will never leave you or your business unattended.</p>
+                </div>
+                <div class="icon__info__section1">
+                    <img class="icon__service__why" src="/src/img/icons/ic-service-6.png" alt="">
+                    <p class="title__inf__description" >World Class 24/7 Support</p>
+                    <p>Our support team is available 24/7. At Netrouting, we hold our team to the highest of standards and complete annual compliance audits. Our team will never leave you or your business unattended.</p>
+                </div>
+            </div>
+        </section>
+        <!----------------- FOOTER ------------------->
+        <footer class="principal__footer">
+            <div class="menu__footer__section">
+                <ul class="footer__menu">
+                    <p class="quick__menu">Our Services</p>
+                    <li class="list__principal__footer"><a href="">Home</a></li>
+                    <li class="list__principal__footer"><a href="">Web Hosting</a></li>
+                    <li class="list__principal__footer"><a href="">SSL Certificates</a></li>
+                    <li class="list__principal__footer"><a href="">Dedicated server</a></li>
+                    <li class="list__principal__footer"><a href="">Cloud</a></li>
+                </ul>
+                <ul class="footer__menu">
+                    <p class="quick__menu">Company</p>
+                    <li class="list__principal__footer"><a href="">About Us</a></li>
+                    <li class="list__principal__footer"><a href="">Contact Us</a></li>
+                    <li class="list__principal__footer"><a href="">Certificados SSL</a></li>
+
+                </ul>
+                <ul class="footer__menu">
+                    <p class="quick__menu">Account</p>
+                    <li class="list__principal__footer"><a href="">My Account</a></li>
+                    <li class="list__principal__footer"><a href="">Register</a></li>
+                </ul>
+                <ul class="Footer__menu__social">
+                    <div class="info__social__l"><a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/xlogo.png" alt=""></a>Twitter</div>
+                    <div class="info__social__l"><a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/instagram.png" alt=""></a>Instagram</div>
+                    <div class="info__social__l"><a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/pngtree-facebook-social-media-icon-png-image_6315968.png" alt=""></a>Facebook</div>
+                    
+                </ul>
+            </div>
+            <div class="info__footer"></div>
+        </footer>
+</body>
+</html>
