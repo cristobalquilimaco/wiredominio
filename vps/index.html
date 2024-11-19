@@ -1,0 +1,303 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Hojas de estilo -->
+        <link rel="stylesheet" href="critical.css">
+        <link rel="preload" href="/src/assets/styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/src/assets/styles/styles.css"></noscript>
+    
+        <link rel="preload" href="/src/assets/styles/resets.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/src/assets/styles/resets.css"></noscript>
+    
+        <link rel="preload" href="/src/assets/styles/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/src/assets/styles/navbar.css"></noscript>
+    
+        <!-- Fuentes de Google -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" as="style">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        
+
+        <!-- Imágenes -->
+        <link rel="preload" href="./src/img/img/datacenterbanner.webp" as="image" type="image/webp" width="1024" height="576">
+        <link rel="preload" as="image" href="./src/img/img/server-slide.png">
+    
+        <!-- Scripts -->
+        <script src="/src/assets/js/animations.js" defer></script>
+        <script src="/src/assets/js/main.js" defer></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js" defer></script>
+
+        <title>Donhoster - Dedicated Servers Solutions</title>
+        <meta name="description" content="Donhoster offers high-performance dedicated servers with 24/7 support, ensuring secure and reliable hosting for your business needs.">
+    </head>
+    
+<body>
+    <header class="principal__header">
+        <div class="sub__menu__1">
+            <div class="email__contact">
+                <a class="email__contact" href="mailto:admin@donhoster.com">
+                    <img class="email__icon" src="/src/img/icons/ic-mail.png" alt="Email Icon" width="20px" height="20px"> admin@donhoster.com
+                </a>
+            </div>
+            <div class="menu__responsive">
+                <ul class="sub__menu__2">
+                    <li class="list__principal__menu0"><a href="">Blog</a></li>
+                    <li class="list__principal__menu0"><a href="about-donhoster/index.html">Company</a></li>
+                    <li class="list__principal__menu0"><a href="">Contact</a></li>
+                    <li class="list__principal__menu0"><a href="">Login</a></li>
+                </ul>
+                <div onclick="toggleVisibility()" class="line">
+                    <div class="line_menu"></div>
+                    <div class="line_menu"></div>
+                    <div class="line_menu"></div>
+                </div>
+            </div>
+        </div>
+        <ul class="sub__menu__2_mobile">
+            <li class="list__principal__menu1"><a href="">Blog</a></li>
+            <li class="list__principal__menu1"><a href="about-donhoster/index.html">Company</a></li>
+            <li class="list__principal__menu1"><a href="">Contact</a></li>
+            <li class="list__principal__menu1"><a href="">Login</a></li>
+        </ul>
+        <div class="menu__Logo">
+            <a href="/">
+                <picture>
+                    <source srcset="/src/img/icons/logo.webp" type="image/webp">
+                    <img class="Logo__img" width="200" height="30" src="/src/img/icons/logo.webp" alt="Donhoster Logo">
+                </picture>
+            </a>
+            <button class="button__menu">Get Info</button>
+            <div onclick="toggleMenu()" class="line">
+                <div class="line_menu"></div>
+                <div class="line_menu"></div>
+                <div class="line_menu"></div>
+            </div>
+        </div>
+        <nav class="nav_menu">
+            <ul class="principal__menu">
+                <li class="list__principal__menu"><a href="/">Home</a></li>
+                <li class="list__principal__menu"><a href="/hosting/index.html">Dedicated Servers</a></li>
+                <li class="list__principal__menu"><a href="/vps/">VPS</a></li>
+                <li class="list__principal__menu"><a href="">Cloud</a></li>
+                <li class="list__principal__menu"><a href="">Web Hosting</a></li>
+            </ul>
+            <ul class="principal__menu__mobile">
+                <li class="list__principal__menu2"><a href="">Home</a></li>
+                <li class="list__principal__menu2"><a href="/dedicated-servers/index.html">Dedicated Servers</a></li>
+                <li class="list__principal__menu2"><a href="vps/index.html">VPS</a></li>
+                <li class="list__principal__menu2"><a href="cloud/index.html">Cloud</a></li>
+                <li class="list__principal__menu2"><a href="hosting/index.html">Web Hosting</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-------------------------- BANNER PRINCIPAL--------------------- -->
+    <section class="principal__banner" >
+        <article class="article__with__img" loading="lazy" style="width:100%; height:400px; aspect-ratio: 16/9;">
+            <img class="banner__web" srcset="./src/img/img/datacenterbanner-small.webp 320w, ./src/img/img/datacenterbanner.webp 1024w" sizes="(max-width: 600px) 320px, 1024px" loading="lazy" alt="Data Center Banner">
+        </article>
+        
+        <div class="info__banner">
+            <div class="title_info_web">
+                <h1>Dedicated servers</h1>
+                <span>Fast, Secure, Reliable</span>
+                <p>Donhoster provides dedicated servers that offer exceptional performance and security.</p>
+            </div>
+            <div class="info__text__list">
+                <div class="img__check__list">
+                    <div class="icon__infor__list">
+                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon" width="32" height="32"><p>24/7 Server Monitoring</p>
+                    </div>
+                    <div class="icon__infor__list">
+                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon" width="32" height="32"><p>High Availability</p>
+                    </div>
+                    <div class="icon__infor__list">
+                        <img class="check__blue" src="/src/img/icons/check.png" alt="Check Icon" width="32" height="32"><p>Scalable Resources</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon__infor__list">
+                        <img class="check__blue" loading="lazy" src="/src/img/icons/check.png" alt="Check Icon" width="25" height="25"><p>Advanced Security</p>
+                    </div>
+                    <div class="icon__infor__list">
+                        <img class="check__blue" loading="lazy" src="/src/img/icons/check.png" alt="Check Icon" width="25" height="25"><p>Custom Configuration</p>
+                    </div>
+                    <div class="icon__infor__list">
+                        <img class="check__blue" loading="lazy" src="/src/img/icons/check.png" alt="Check Icon" width="25" height="25"><p>Expert Support</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn__price">
+                <p class="principal__price__banner">$60/<span>month</span></p>
+                <button class="principal__btn__banner">All dedicated server plans</button>
+            </div>
+        </div>
+        <div class="banner__img__small">
+            <article class="imagen__and__banner">
+                <img class="server__slide" srcset="./src/img/img/server-slide.png 320w, ./src/img/img/server-slide.png 1024w"
+                sizes="(max-width: 500px) 320px, 1024px"
+                loading="lazy" alt="Data Center Banner"
+                style="width: 100%; height: auto; aspect-ratio: 16/14;">
+                       <div class="icon__info__details">
+                           <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-1.png" alt="Security Icon" width="80" height="80" loading="lazy"></div>
+                           <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-2.png" alt="Performance Icon" width="80" height="80" loading="lazy"></div>
+                           <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-3.png" alt="Support Icon" width="80" height="80" loading="lazy"></div>
+                       </div>
+            </article>
+        </div>
+    </section>
+
+    <!---------------- SECTION OF PLANS  ----------------------> 
+    <div id="plans-container" class="principal__package animatin">
+        <!-- Plans will be dynamically loaded here -->
+    </div>
+
+    <!-------------- INFORMATION SECTION ------------------->    
+    <section class="What__We__Do">
+        <div class="image__relative">
+            <img class="banner__web1" loading="lazy" src="./src/img/img/datacenterbanner.webp" alt="Data Center Services" loading="lazy">
+        </div>
+        <div class="first__component">
+            <div class="icon__info__section1">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-1.png" alt="Support Icon" width="90" height="90" loading="lazy">
+                <p class="title__inf__description">World-Class 24/7 Support</p>
+                <p>Our dedicated support team is available around the clock. At Donhoster, we maintain high standards and conduct regular compliance audits to ensure exceptional service for your business.</p>
+            </div>
+            <div class="icon__info__section1">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-2.png" alt="Scalability Icon" width="90" height="90" loading="lazy">
+                <p class="title__inf__description">Scalable Solutions</p>
+                <p>Our dedicated servers are designed to grow with your business, providing flexible resource allocation to meet your evolving needs.</p>
+            </div>
+            <div class="icon__info__section1">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-3.png" alt="Security Icon" width="90" height="90" loading="lazy">
+                <p class="title__inf__description">Advanced Security Measures</p>
+                <p>Your data's security is our priority. We implement robust security protocols to protect your information and maintain compliance.</p>
+            </div>
+            <div class="icon__info__section1">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-4.png" alt="Customization Icon" width="90" height="90" loading="lazy">
+                <p class="title__inf__description">Custom Configurations</p>
+                <p>Tailor your server setup to fit your specific requirements, ensuring optimal performance for your applications.</p>
+            </div>
+            <div class="icon__info__section1">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-5.png" alt="Reliability Icon" width="90" height="90" loading="lazy">
+                <p class="title__inf__description">Reliable Uptime</p>
+                <p>Count on us for consistent uptime and performance, keeping your business operational around the clock.</p>
+            </div>
+            <div class="icon__info__section1">
+                <img class="icon__service__why" src="./src/img/icons/ic-service-6.png" alt="Expert Support Icon" width="90" height="90" loading="lazy">
+                <p class="title__inf__description">Expert Technical Support</p>
+                <p>Our knowledgeable staff is here to assist you with any technical challenges, ensuring your operations run smoothly.</p>
+            </div>
+        </div>
+    </section>
+    <!-------------- WHY DON HOSTER ---------------->
+    <div class="principal__whydonhoster animatin_reverse">
+        <h1 class="title__why"><span class="color__why">¿Why</span> DonHoster?</h1>
+        <section class="principal__info_why">
+            <div class="first__section__info">
+            <article class="info__why__donhoster animatin">
+                <div class="icon__border__info line__border1">
+                <img class="icon__info_why" src="src/img/img/internetglobal.png" alt="" />
+                </div>
+                <div class="article__info_description">
+                <p class="info__description">INFRASTRUCTURE WHERE IT MATTERS</p>
+                <p class="info__description">At DonHoster, we’ve got you covered. Our data centers and cloud infrastructure provide your business with reliable, low-latency connectivity that will keep you connected no matter where you or your data are.</p>
+                </div> 
+            </article>
+            <article class="info__why__donhoster animatin_reverse">
+                <div class="icon__border__info line__border2">
+                <img class="icon__info_why" src="src/img/img/automation.png" alt="" />
+                </div>
+                <div class="article__info_description">
+                <p class="info__description">AUTOMATION WHEN YOU WANT IT</p>
+                <p class="info__description">At DonHoster, we believe that you should be in control of your products and services. That’s why we put  you in the driver’s seat and let you decide how much control you want.</p>
+                </div>
+            </article>
+            </div>
+            <div class="icon__banner__desktop">
+            <img src="src/img/img/iconbanner.svg" alt="" />
+            </div>
+            <div class="first__section__info">
+            <article class="info__why__donhoster info__why__reverse animatin">
+                <div class="icon__border__info line__border3">
+                <img class="icon__info_why" src="src/img/img/customized.png" alt="" />
+                </div>
+                <div class="article__info_description2">
+                <p class="info__description text__info__reverse">SECURITY THAT YOU CAN COUNT ON</p>
+                <p class="info__description text__info__reverse">We prioritize your data security. Our advanced systems and expert team provide protection against potential threats, giving you peace of mind to focus on your business.</p>
+                </div>
+            </article>
+            <article class="info__why__donhoster info__why__reverse animatin_reverse">
+                <div class="icon__border__info line__border4">
+                <img class="icon__info_why" src="src/img/img/World-Class-Support.png" alt="" />
+                </div>
+                <div class="article__info_description2">
+                <p class="info__description text__info__reverse">PEOPLE WHEN YOU NEED IT</p>
+                <p class="info__description text__info__reverse">Our support team is available 24/7. Our Service Level Agreement ensures you can hold us to the highest of standards and annual compliance audits. Our world-class Remote Hands offering will never leave you or your business unattended.</p>
+                </div>
+            </article>
+            </div>
+        </section>
+        <a href="https://donhoster.com/cloud" class="" aria-label="Learn More about Dedicated Servers in Miami">
+            <button class="btn_learn_more">About Us</button>
+        </a>
+    </div>
+    <!-- ------DATA CENTER---- -->
+    <div class="principal__USAOutlineMap">
+        <p class="location_title animatin">
+            <span class="color__location">Location</span> Matters
+        </p>
+        <p class="info__location animatin">
+            Our Miami data center serves as a pivotal hub within one of the world's largest Internet exchanges, linking Latin America and the Northeast US. It offers cutting-edge hosting solutions, boasting top-tier infrastructure and connectivity. Our innovative, automated technology caters to businesses of all sizes, providing cloud-based services with assured quality, availability, and the best hardware spread across multiple data centers.
+        </p>
+        <div class="usa-map-container animatin">
+            <i class="bx bxs-location-plus location__icon__btn"></i>
+            <img src="/src/img/img/data-centers-miami-florida.webp" alt="USA Outline" class="usa-outline" />
+        </div>
+        <a href="/data-center" class="" aria-label="Learn More about Dedicated Servers in Miami">
+            <button class="btn_learn_more">
+                Our Data Center
+            </button>
+        </a>
+    </div>
+    <!----------------- FOOTER ------------------->
+    <footer class="principal__footer">
+        <div class="menu__footer__section">
+            <ul class="footer__menu">
+                <p class="quick__menu">Our Services</p>
+                <li class="list__principal__footer"><a href="">Home</a></li>
+                <li class="list__principal__footer"><a href="">Web Dedicated Servers</a></li>
+                <li class="list__principal__footer"><a href="">VPS</a></li>
+                <li class="list__principal__footer"><a href="">Dedicated Server</a></li>
+                <li class="list__principal__footer"><a href="">Cloud Solutions</a></li>
+            </ul>
+            <ul class="footer__menu">
+                <p class="quick__menu">Company</p>
+                <a href=""><li class="list__principal__footer"><a href="">About Us</a></li></a>
+                <a href=""><li class="list__principal__footer"><a href="">Contact Us</a></li></a>
+                <a href=""><li class="list__principal__footer"><a href="">VPS</a></li></a>
+            </ul>
+            <ul class="footer__menu">
+                <p class="quick__menu">Account</p>
+                <li class="list__principal__footer"><a href="">My Account</a></li>
+                <li class="list__principal__footer"><a href="">Register</a></li>
+            </ul>
+            <ul class="Footer__menu__social">
+                <div class="info__social__l">
+                    <a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/xlogo.png" alt="Twitter Logo" loading="lazy" width="40" height="40"></a>Twitter
+                </div>
+                <div class="info__social__l">
+                    <a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/instagram.png" alt="Instagram Logo" loading="lazy" width="40" height="40"></a>Instagram
+                </div>
+                <div class="info__social__l">
+                    <a class="circle__social__media" href=""><img class="logo_social" src="/src/img/icons/pngtree-facebook-social-media-icon-png-image_6315968.png" alt="Facebook Logo" loading="lazy" width="40" height="40"></a>Facebook
+                </div>
+            </ul>
+        </div>
+        <div class="info__footer"></div>
+    </footer>
+    <script src="./src/assets/plans/homePlans.js" defer></script>
+</body>
+</html>
