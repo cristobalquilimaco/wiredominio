@@ -72,6 +72,6 @@ const plans = [
     });
   }
   
-  // Llama a la función para renderizar los planes
+  //Funcion para renderizar los planes
   renderPlans();
   
