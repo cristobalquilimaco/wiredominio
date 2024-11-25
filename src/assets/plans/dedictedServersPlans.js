@@ -48,7 +48,14 @@ function renderPlansDedicated(){
     planDiv.innerHTML = ` 
       <section class="prueba">
         <div class="package">
-          <></>
+          <div class="package2">
+            <p class="title__plan__info">
+              ${dedicated.name}
+            </p>
+            <div>
+            
+            </div>
+          </div>
         </div>
       </section>
     `
