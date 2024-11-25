@@ -1,4 +1,4 @@
-const dedicatedServer = [
+const dedicatedServers = [
     {
       id: 1,
       name: 'Dedicated Servers in Miami, FL - Small',
@@ -38,4 +38,20 @@ const dedicatedServer = [
 
   ];
 
-  export default dedicatedServer
+function renderPlansDedicated(){
+  const containerDedicated = document.getElementById("plans-dedicated") //Ayuda a acceder al elemento de html que tiene un atributo id
+  dedicatedServers.forEach(dedicated => {
+    const planDiv = document.createElement("div"); // Crera un elememento HTML de tipo <Div>
+    planDiv.classList.add("dedicated")// Este es utilizado para crear una o mas clases CSS en un elemento HTMl
+    
+    // Es una prpiedad del elemento del DOM que permite accesar o modificar el contenido HTML De un elemento..
+    planDiv.innerHTML = ` 
+      <section class="prueba">
+        <div class="package">
+          <></>
+        </div>
+      </section>
+    `
+
+  })
+}
