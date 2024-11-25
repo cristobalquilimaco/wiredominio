@@ -61,6 +61,9 @@ function renderPlansDedicated(){
         </div>
       </section>
     `;
-    containerDedicated.appendChild
+    containerDedicated.appendChild(planDiv) // Permite insertar un elemento dentro de otro
+
   })
 }
+
+renderPlansDedicated()
