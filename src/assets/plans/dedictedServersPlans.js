@@ -52,13 +52,15 @@ function renderPlansDedicated(){
             <p class="title__plan__info">
               ${dedicated.name}
             </p>
-            <div>
-            
+            <div class="bg__color__plan">
+              <p class="price__plan1">
+                Price:${dedicated.price}
+              </p>
             </div>
           </div>
         </div>
       </section>
-    `
-
+    `;
+    containerDedicated.appendChild
   })
 }
