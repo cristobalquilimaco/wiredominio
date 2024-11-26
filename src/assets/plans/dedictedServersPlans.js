@@ -58,7 +58,17 @@ function renderPlansDedicated(){
               </p>
             </div>
             <ul class="features__section">
-              
+              ${dedicated.features.map(
+                feature => `
+                  <li class="check__plans">
+                    <div class="check__plans">
+                      <img class="check__blue" src="/src/img/icons/check.png" alt="icon-check-plans"/>
+                    </div>
+                  </li>
+                `
+              )
+
+              }
             </ul>
           </div>
         </div>
