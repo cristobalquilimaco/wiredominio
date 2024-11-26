@@ -57,7 +57,19 @@ function renderPlanVps(){
             </p>
           </div>
           <ul class="features__section">
-            
+            ${vps.features.map(
+              features => `
+                <li class="check__plans">
+                  <div class="check__plans">
+                    <img class="check__blue" src="/src/img/icons/check.png" alt="icon-check-plans"/>
+                    <p class="style__features">
+                      ${features}
+                    </p>
+                  </div>
+                </li>
+              `
+            ).join("")
+            }
           </ul>
         </div>
       </div>
