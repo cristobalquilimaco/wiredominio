@@ -63,13 +63,16 @@ function renderPlansDedicated(){
                   <li class="check__plans">
                     <div class="check__plans">
                       <img class="check__blue" src="/src/img/icons/check.png" alt="icon-check-plans"/>
+                      <p class="style__features">${feature}</p>
                     </div>
                   </li>
                 `
-              )
-
+              ).join("")
               }
             </ul>
+            <div class="btn__chose-container">
+              <a href="${dedicated.url}"><button class="btn__plan__configure">Chose plan</button></a>
+            </div>
           </div>
         </div>
       </section>
