@@ -38,3 +38,7 @@ const vpsKvm = [
 
   ];
 
+function renderPlanVps(){
+  const containerVps = document.getElementById("plans-vps")
+  
+}
