@@ -57,7 +57,9 @@ function renderPlansDedicated(){
                 Price:${dedicated.price}
               </p>
             </div>
-            <ul></ul>
+            <ul class="features__section">
+              
+            </ul>
           </div>
         </div>
       </section>
