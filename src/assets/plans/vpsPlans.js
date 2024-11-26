@@ -44,6 +44,12 @@ function renderPlanVps(){
     const planDiv = document.createElement("div"); // crea un elemento tipo div
     planDiv.classList.add("vps")
 
-    planDiv.innerHTML = 
+    planDiv.innerHTML = `
+    <section class="prueba">
+      <div class"package">
+
+      </div>
+    </section>
+    `
   });
 }
