@@ -1,4 +1,4 @@
-const vpsKvm = [
+const vpsPlans = [
     {
       id: 1,
       name: 'VPS in Miami, FL - Small',
@@ -40,7 +40,7 @@ const vpsKvm = [
 
 function renderPlanVps(){
   const containerVps = document.getElementById("plans-vps")
-  vpsPlans.array.forEach(vps => {
+  vpsPlans.forEach(vps => {
     const planDiv = document.createElement("div"); // crea un elemento tipo div
     planDiv.classList.add("vps")
 
