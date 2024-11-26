@@ -40,5 +40,10 @@ const vpsKvm = [
 
 function renderPlanVps(){
   const containerVps = document.getElementById("plans-vps")
-  
+  vpsPlans.array.forEach(vps => {
+    const planDiv = document.createElement("div"); // crea un elemento tipo div
+    planDiv.classList.add("vps")
+
+    planDiv.innerHTML = 
+  });
 }
