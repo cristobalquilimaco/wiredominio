@@ -51,6 +51,14 @@ function renderPlanVps(){
           <p class="title__plan__info">
             ${vps.name}
           </p>
+          <div class="bg__color__plan">
+            <p class="price__plan1">
+              Price: ${vps.price}
+            </p>
+          </div>
+          <ul class="features__section">
+            
+          </ul>
         </div>
       </div>
     </section>
