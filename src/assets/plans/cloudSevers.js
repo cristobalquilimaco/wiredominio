@@ -17,6 +17,9 @@ function renderCloudServers(){
         const planDiv = document.createElement("div")
         planDiv.classList.add("cloud")
 
+        planDiv.innerHTML = `
+            <section></section>
+        `
 
     })
 }
