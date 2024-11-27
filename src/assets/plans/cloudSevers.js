@@ -13,5 +13,8 @@ const cloudServer = [
 
 function renderCloudServers(){
     const containerCloud = document.getElementById("cloud-plans") // ayuda a acceder al elemento html que tiene un atributo id
-    cloudServer.forEach(cloud)
+    cloudServer.forEach(cloud =>{
+        const planDiv = document.createElement("div")
+        
+    })
 }
