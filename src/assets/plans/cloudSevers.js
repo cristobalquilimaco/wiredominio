@@ -24,6 +24,11 @@ function renderCloudServers(){
                         <p class="title__plan__info">
                             ${cloud.name}
                         </p>
+                        <div class="bg__color__plan">
+                            <p class="">
+                                Price: ${cloud.price}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
