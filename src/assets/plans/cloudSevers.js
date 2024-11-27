@@ -21,7 +21,9 @@ function renderCloudServers(){
             <section class="prueba">
                 <div class="package">
                     <div class="package2">
-                    
+                        <p class="title__plan__info">
+                            
+                        </p>
                     </>
                 </div>
             </section>
