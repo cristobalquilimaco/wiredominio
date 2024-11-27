@@ -22,12 +22,15 @@ function renderCloudServers(){
                 <div class="package">
                     <div class="package2">
                         <p class="title__plan__info">
-                            
+                            ${cloud.name}
                         </p>
-                    </>
+                    </div>
                 </div>
             </section>
         `
+        containerCloud.appendChild(planDiv)
 
     })
 }
+
+renderCloudServers()
