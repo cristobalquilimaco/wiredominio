@@ -20,7 +20,9 @@ function renderCloudServers(){
         planDiv.innerHTML = `
             <section class="prueba">
                 <div class="package">
-                
+                    <div class="package2">
+                    
+                    </>
                 </div>
             </section>
         `
