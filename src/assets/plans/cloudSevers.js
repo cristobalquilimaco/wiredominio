@@ -34,7 +34,12 @@ function renderCloudServers(){
                                 cloud.features.map(
                                     features => `
                                     <li class="check__plans">
-                                    
+                                        <div class="check__plans">
+                                            <img class="check__blue" src="/src/img/icons/check.png" alt="icon-check-plans"/>
+                                            <p class="styles__features">
+                                                ${features}
+                                            </p>
+                                        </div>
                                     </li>
                                     `
                                 )
