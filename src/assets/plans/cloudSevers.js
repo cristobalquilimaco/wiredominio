@@ -29,6 +29,17 @@ function renderCloudServers(){
                                 Price: ${cloud.price}
                             </p>
                         </div>
+                        <ul class="features__section">
+                            ${
+                                cloud.features.map(
+                                    features => `
+                                    <li class="check__plans">
+                                    
+                                    </li>
+                                    `
+                                )
+                            }
+                        </ul>
                     </div>
                 </div>
             </section>
