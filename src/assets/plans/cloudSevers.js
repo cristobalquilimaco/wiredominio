@@ -25,7 +25,7 @@ function renderCloudServers(){
                             ${cloud.name}
                         </p>
                         <div class="bg__color__plan">
-                            <p class="">
+                            <p class="price__plan1">
                                 Price: ${cloud.price}
                             </p>
                         </div>
@@ -42,7 +42,7 @@ function renderCloudServers(){
                                         </div>
                                     </li>
                                     `
-                                )
+                                ).join("")
                             }
                         </ul>
                     </div>
