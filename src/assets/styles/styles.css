@@ -315,8 +315,22 @@ button.principal__btn__banner {
 
 /* ------------------------WHAT WE DO SECTION -------------------*/
 
+.business-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.subtitle-business{
+    font-size: 20px;
+    text-align: center;
+    min-width: 300px;
+    margin: 10px;
+}
+
 .What__We__Do{
-    margin-top: 250px;
+    margin-top: 120px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -365,7 +379,10 @@ button.principal__btn__banner {
     width: 90px;
 }
 
-
+.subtitle-server{
+    color: white;
+    z-index: 9999;
+}
 
 .icon__info__section1{
     display: flex;
@@ -664,13 +681,14 @@ button.principal__btn__banner {
 /* -----DATACENTER MAPA------ */
 
 .principal__USAOutlineMap{
+    margin-top: 10px;
+    border-top: 1px solid var(--color-hover);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     margin-top: 2em;
-    background-color: #5e26be23;
     padding-bottom: 2em;
     width: 100%;
 }
@@ -837,14 +855,24 @@ height: 280px;
     }
 
     /* ------------------------WHAT WE DO SECTION -------------------*/
+.business-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.subtitle-business{
+    font-size: 30px;
+}
 
 .What__We__Do{
-    margin-top: 250px;
+    margin-top: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 155px;
+    margin-bottom: 75px;
 }
 
 .image__relative {
