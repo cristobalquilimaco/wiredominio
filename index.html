@@ -10,7 +10,10 @@
     
         <link rel="preload" href="/src/assets/styles/resets.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/src/assets/styles/resets.css"></noscript>
-    
+        <link rel="preload" as="image" href="/src/img/img/donhoster-data-center-miami-large.webp">
+        
+            <!-- Otros elementos del head -->
+        
         <link rel="preload" href="/src/assets/styles/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/src/assets/styles/navbar.css"></noscript>
     
@@ -64,8 +67,8 @@
         <div class="menu__Logo">
             <a href="/">
                 <picture>
-                    <source srcset="/src/img/icons/logo.webp" type="image/webp">
-                    <img class="Logo__img" width="200" height="30" src="/src/img/icons/logo.webp" alt="Donhoster Logo">
+                    <source srcset="/src/img/icons/donhoster-logo.webp" type="image/webp">
+                    <img class="Logo__img" width="200" height="30" src="/src/img/icons/donhoster-logo.webp" alt="Donhoster Logo">
                 </picture>
             </a>
             <button class="button__menu">Get Info</button>
@@ -95,9 +98,20 @@
 
     <!-------------------------- BANNER PRINCIPAL--------------------- -->
     <section class="principal__banner" >
-        <article class="article__with__img" loading="lazy" style="width:100%; height:400px; aspect-ratio: 16/9;">
-            <img class="banner__web" srcset="./src/img/img/datacenterbanner-small.webp 320w, ./src/img/img/datacenterbanner.webp 1024w" sizes="(max-width: 600px) 320px, 1024px" loading="lazy" alt="Data Center Banner">
+        <article class="article__with__img" style="width:100%; height:400px; aspect-ratio: 16/9;">
+            <img class="banner__web"
+     src="/src/img/img/donhoster-data-center-miami-small.webp"
+     srcset="
+        /src/img/img/donhoster-data-center-miami-small.webp 320w, 
+        /src/img/img/donhoster-data-center-miami-medium.webp 640w,
+        /src/img/img/donhoster-data-center-miami-large.webp 1024w,
+        /src/img/img/donhoster-data-center-miami-extra-large.webp 2048w"
+     sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 50vw"
+     alt="Data Center Banner"
+     style="width:100%; height:100%; object-fit:cover;">
+
         </article>
+        
         
         <div class="info__banner">
             <div class="title_info_web">
@@ -143,7 +157,7 @@
                        <div class="icon__info__details">
                            <div class="border__icon"><img class="icon__shield" src="./src/img/icons/donhoster-security-icon.webp" alt="Security Icon" width="80" height="80" loading="lazy"></div>
                            <div class="border__icon"><img class="icon__shield" src="./src/img/icons/donhoster-cloud-services-icon.webp" alt="Performance Icon" width="80" height="80" loading="lazy"></div>
-                           <div class="border__icon"><img class="icon__shield" src="./src/img/icons/ftr-ic-3.png" alt="Support Icon" width="80" height="80" loading="lazy"></div>
+                           <div class="border__icon"><img class="icon__shield" src="./src/img/icons/donhoster-tag-server-icon.webp" alt="Support Icon" width="80" height="80" loading="lazy"></div>
                        </div>
             </article>
         </div>
@@ -157,7 +171,7 @@
     <!-------------- INFORMATION SECTION ------------------->    
     <section class="What__We__Do">
         <div class="image__relative">
-            <img class="banner__web1" loading="lazy" src="./src/img/img/datacenterbanner.webp" alt="Data Center Services" loading="lazy">
+            <img class="banner__web1" loading="lazy" src="./src/img/img/donhoster-data-center-miami.jpg" alt="Data Center Services" loading="lazy">
         </div>
         <div class="first__component">
             <div class="icon__info__section1">

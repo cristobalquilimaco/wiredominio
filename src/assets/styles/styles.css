@@ -48,9 +48,8 @@ button.principal__btn__banner {
   
   .article__with__img img.banner__web {
     width: 100%;
-    height: 500px;
+    height: auto; /* Ajusta la altura automáticamente */
     display: block;
-    z-index: 1; 
     object-fit: cover;
   }
   
