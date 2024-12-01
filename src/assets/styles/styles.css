@@ -25,7 +25,7 @@
 
 .principal__banner{
     color: var(--color-letter-text);
-    margin-top: 7px;
+
 }
 
 button.principal__btn__banner {
@@ -48,7 +48,7 @@ button.principal__btn__banner {
   
   .article__with__img img.banner__web {
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: block;
     z-index: 1; 
     object-fit: cover;
@@ -809,7 +809,7 @@ height: 280px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 350px;
+        width: 300px;
         height: auto;
     }
 
