@@ -55,7 +55,7 @@ const plans = [
                 ${plan.features.map(feature => `
                     <li class="check__plans">
                         <div class="check__plans">
-                            <img class="check__blue" src="/src/img/icons/donhoster-dedicated-server-check.webp" alt="icon-check-plans">
+                            <img class="check__blue" src="/src/img/icons/donhoster-dedicated-server-check.webp" alt="donhoster-dedicated-server-check">
                             <p class="style__features">${feature}</p>
                         </div>
                     </li>`).join('')}
