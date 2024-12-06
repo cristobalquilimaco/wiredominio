@@ -213,6 +213,7 @@ button.principal__btn__banner {
   }
 
 .section__description{
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -315,7 +316,12 @@ button.principal__btn__banner {
     display: flex;
     flex-direction: column;
     height: 200px;
+}
 
+.description-text-donhoster{
+    text-align: center;
+    max-width: 1260px;
+    padding: 1em;
 }
 
 .style__features{
