@@ -740,8 +740,8 @@ button.principal__btn__banner {
     color: var(--color-btn);
     font-size: 40px;
     position: relative;
-    left: 74%;
-    top:60%;
+    left: 22%;
+    top: 25%;
     z-index: 1;
     filter: drop-shadow(0 0 10px transparent); 
     animation: shadow-shine 2s linear infinite; 
