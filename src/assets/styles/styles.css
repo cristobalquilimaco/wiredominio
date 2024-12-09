@@ -768,6 +768,8 @@ button.principal__btn__banner {
     padding-bottom: 1rem;
     border-bottom: 2px solid white;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .question {
@@ -783,6 +785,7 @@ button.principal__btn__banner {
 .answer{
     max-height: 0;
     overflow: hidden;
+    transition: max-height 1.4s ease;
 }
 
 .answer p{
