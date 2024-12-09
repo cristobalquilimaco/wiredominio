@@ -776,10 +776,28 @@ button.principal__btn__banner {
     align-items: center;
 }
 
+.question h3{
+    font-size: 1.8rem;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
 .question:hover {
     background-color: #0056b3;
 }
 
+.faq.active .answer{
+    max-height: 300px;
+}
 
 
 
