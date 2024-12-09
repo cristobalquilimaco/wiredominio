@@ -771,9 +771,8 @@ button.principal__btn__banner {
 }
 
 .faq {
-    max-width: 1200px;
-    margin-top: 2rem;
-    padding-bottom: 1rem;
+    max-width: 1450px;
+    margin-top: 1rem;
     border-bottom: 2px solid white;
     cursor: pointer;
     display: flex;
