@@ -787,7 +787,7 @@ button.principal__btn__banner {
 }
 
 .question h3{
-    font-size: 1.8rem;
+    font-size: 20px;
 }
 
 .answer{
@@ -799,11 +799,12 @@ button.principal__btn__banner {
 .answer p{
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 1.4rem;
+    font-size: 16px;
 }
 
 .question:hover {
-    background-color: #0056b3;
+    background-color: var(--color-bottom);
+    color: var(--color-letter-text);
 }
 
 .faq.active .answer{
