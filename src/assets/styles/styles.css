@@ -762,6 +762,7 @@ button.principal__btn__banner {
 /*FAQ SECTION*/
 /*FAQ SECTION*/
 
+
 .faq-section{
     width: 100%;
     display: flex;
@@ -769,6 +770,11 @@ button.principal__btn__banner {
     align-items: center;
     justify-content: center;
     margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.faq-section h2{
+    margin-bottom: 40px;
 }
 
 .faq {
