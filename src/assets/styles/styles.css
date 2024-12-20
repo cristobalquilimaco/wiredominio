@@ -719,6 +719,11 @@ button.principal__btn__banner {
     width: 100%;
 }
 
+.cantainer__data__datacenter{
+    background-color: red;
+    display: flex;
+}
+
 .location_title{
     font-size: 40px;
     font-weight: bold;
@@ -731,6 +736,11 @@ button.principal__btn__banner {
     margin-bottom: 2em;
     padding: 1rem;
     text-align: center;
+}
+
+.container__info__data__center{
+    display: flex;
+    flex-direction: column;
 }
 
 .color__location{
